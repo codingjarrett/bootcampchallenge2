@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+/* sets style for body */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+  
+/* sets styling for header */
+header {
+    padding: 20px 35px;
+    background-color: #5200c5;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+  
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: #000000;
+    text-shadow: 0 0 10px rgba(230, 110, 5, 0.564);
+}
+  
+header a {
+    text-decoration: none;
+    color: #0becb4;
+}
+  
+header nav {
+    margin: 7px 0;
+}
+  
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+  
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(212, 1, 1, 0.5);
+}
+  
+header nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-shadow: none;
+}  
+  
+/* sets the styling for footer */
+footer {
+    padding-top: 35px; 
+    padding-bottom: 35px;
+    display: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    text-decoration: italic;
+    text-align: center;
+}
+  
+footer h2 {
+    color: #ff7300;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+  
+/* sets the padding for the section content */
+section {
+    padding: 60px;
+}
+  
+/* sets the styling for the hero content */
+.hero {
+    background-image: url('images/cover-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+}
+
+/* subtitle styling */
+.hero h2 {
+    font-style: normal;
+    font-size: 30px;
+    color: #000000;
+    float: right;
+    background-color: #dd6b00;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+    
+/* sets styling for the main section */
+.section {
+    background-color: #5200c5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* sets styling for the about me and contact me sections */
+.section-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 25px;
+    color: #ff8000;
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
+    width: 10%;
+    text-align: end;
+    border-right: #000000 solid 3px;
+}
+
+/* sets the styling for the work section */
+.section-title2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 25px;
+    color: #0becb4;
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
+    width: 10%;
+    text-align: right;
+    height: 1250px;
+    border-right: #dc6700 solid 3px;
+}
+
+/* sets the styling for the flexrow in the about me and contact me sections */
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+
+/* sets the styling for the flewrow in work section */
+.flex-row2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: right;
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+
+/* sets display of profile photo */
+.photo {
+    width: 220px;
+    height: 190px;
+    padding-left: 1%;
+    border-radius: 50%;
+    box-shadow: 10px 5px 5px rgb(199, 103, 0);
+    
+}
+
+/* sets the styling dor the front and anchor setttings */
+.section p, .section a {
+    line-height: 1.5;
+    color: rgb(0, 255, 217);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: left;
+    padding: 0 15px 0 15px;
+}
+
+/* work section font styling */
+.flex-row2 p {
+    display: inline-block;
+    text-align: start;
+    background-color: rgb(243, 117, 0);
+    opacity: 85%;
+    width: 45%;
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+}
+
+/* styling for the main project */
+.main-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    height: 425px;
+    width: 100%;
+}
+
+/* styling for the aside projects */
+.aside-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* styling for the main project image */
+.based-infact {
+    background-image: url('images/bif.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin: 0 2% 3% 3%;
+    border: rgb(0, 255, 217) 5px solid;
+    position: relative;
+}
+
+.based-infact:hover {
+    opacity: 75%;
+}
+
+/* styling for Horiseon */
+.horiseon {
+    background-image: url('images/digital-marketing-meeting.jpg');
+    background-size: cover;
+    width: 47.5%;
+    height: 300px;
+    margin-bottom: 2%;
+    margin-right: 0.5%;
+    border: rgb(0, 255, 217) 5px solid;
+    position: relative;
+}
+
+.horiseon:hover {
+    opacity: 75%;
+}
+
+/* styling for prework */
+.prework {
+    background-image: url('images/bowtie-cat.png');
+    background-size: cover;
+    width: 47.5%;
+    height: 300px;
+    margin-bottom: 2%;
+    margin-left: 0.5%;
+    border: rgb(0, 255, 217) 5px solid;
+    position: relative;
+}
+
+.prework:hover {
+    opacity: 75%;
+}
+
+/* styling for the future image */
+.future-one {
+    background-image: url('images/future.jpg');
+    background-size: cover;
+    width: 47.5%;
+    height: 300px;
+    margin-bottom: 2%;
+    margin-right: 0.5%;
+    border: rgb(0, 255, 217) 5px solid;
+    position: relative; 
+}
+
+.future-one:hover {
+    opacity: 75%;
+}
+
+/* styling for the future image 2*/
+.future-two {
+    background-image: url('images/future-shock.jpg');
+    background-size: cover;
+    width: 47.5%;
+    height: 300px;
+    margin-bottom: 2%;
+    margin-left: 0.5%;
+    border: rgb(0, 255, 217) 5px solid;
+    position: relative; 
+}
+
+.future-two:hover {
+    opacity: 75%;
+}
+/* end of main styling */
+  
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) and (min-width: 768px) {
+    header {
+      font-size: 50px;
+      padding-bottom: 0px;
+      border: 8px solid black;
+      background: rgb(0, 0, 0);
+    }
+  }
+    footer {
+     font-size: 50px;
+     padding-bottom: 0px;
+     border: 8px solid black;
+     background: rgb(0, 0, 0);
+  }
+    section {
+        font-size: auto;
+        padding-bottom: 0px;
+    }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    header {
+        font-size: 50px;
+        padding-bottom: 0px;
+        border: 8px solid black;
+        background: rgb(0, 0, 0);
+      }
+    }
+      footer {
+       font-size: 50px;
+       padding-bottom: 0px;
+       border: 8px solid black;
+       background: rgb(0, 0, 0);
+    }
+      section {
+          font-size: auto;
+          padding-bottom: 0px;
+      }
+  
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 600px) and (min-width: 0px) {
+    header {
+        font-size: 50px;
+        padding-bottom: 0px;
+        border: 8px solid black;
+        background: rgb(0, 0, 0);
+      }
+    }
+      footer {
+       font-size: 50px;
+       padding-bottom: 0px;
+       border: 8px solid black;
+       background: rgb(0, 0, 0);
+    }
+      section {
+          font-size: auto;
+          text-align: auto;
+          padding-bottom: 0px;
+      }
